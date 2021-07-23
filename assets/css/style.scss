@@ -1,0 +1,147 @@
+/*
+  Template Name: Template Name
+  Author: Author Name
+  Support: ahmedradwan052@gmail.com 
+  Version: 1.0
+*/
+
+/* 
+======Table of content=====
+1.Theme default 
+
+
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+	--font-poppins:"Poppins", sans-serif;
+	--font-nunito:'Nunito Sans', sans-serif;
+ 
+	--primary-color-red: #fe4646;
+	--primary-color-light-red: #dd0101;
+	--anchor-color:rgba(29, 37, 45, .4);
+	--text-color:#1d252d;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+ 
+body {
+	font-family: var(--font-nunito);
+	color: var(--primary-color-red);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-poppins);
+	font-weight: normal;
+	color: #313131;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+
+a,
+a:hover,
+a:focus{
+	color: var(--anchor-color);
+}
+
+*:focus { 
+	outline: 0 !important;
+}
+ 
+*:focus:not(.focus-visible) {
+	outline: 0 !important;
+	box-shadow: none !important;
+}
+
+// navbar
+.navbar {
+	padding: 0;
+	margin: 0;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
+	.logo{
+		border-right: 1px solid #ddd;
+		margin: 0;
+		padding: 32px;
+	}
+
+	.navbar-menu{
+		width: 100%;
+	
+		.navbar-social__list{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: row;
+			margin: 0;
+			padding: 10px 0px 10px 10px;
+			border-bottom: 1px solid #ddd;
+			width: 100%;
+			li{
+				list-style: none;
+				display: inline-block;
+				padding: 5px;
+
+				a{
+					color: var(--anchor-color);
+					&:hover{
+						color: var(--primary-color-red);
+					}
+				}
+			}
+		}
+		
+		.navbar-menu--list{
+			padding: 15px 0 10px 10px;
+
+			a{
+				color: var(--text-color);
+			}
+
+			.custom-dropdown--menu{
+				margin-top: 1.125rem !important;
+
+				.dropdown-item:active,
+				.dropdown-item:focus, 
+				.dropdown-item:hover{
+					background-color: transparent;
+
+				}
+			}
+		}
+
+		a{
+			font-weight: 700;
+			text-transform: uppercase;
+			font-family: var(--font-nunito);
+			font-size: 12px;
+			text-decoration: none;
+			&:hover{
+				color: var(--primary-color-red);
+			}
+		}
+		.nav-link:hover,
+		.nav-link.active,
+		.nav-link:focus{
+			color: var(--primary-color-red);
+		}
+	
+	}
+}
+
