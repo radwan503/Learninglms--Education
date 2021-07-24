@@ -6,7 +6,9 @@
 */
 /* 
 ======Table of content=====
-1.Theme default 
+1.Theme default
+2.Navbar  
+3.Hero section
 */
 /* 1. Theme default css */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
@@ -71,6 +73,7 @@ a:focus {
 
 *:focus {
   outline: 0 !important;
+  border: 1px dashed var(--primary-color-light-red);
 }
 
 *:focus:not(.focus-visible) {
@@ -79,6 +82,20 @@ a:focus {
           box-shadow: none !important;
 }
 
+.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 0px;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  width: 100%;
+}
+
+/*===========
+2.Navbar 
+==============*/
 .navbar {
   padding: 0;
   margin: 0;
@@ -166,6 +183,9 @@ a:focus {
   color: var(--primary-color-red);
 }
 
+/*===========
+3.Hero section 
+==============*/
 #hero-banner {
   background-image: url(../img/project/hero-bg.png);
   padding: 50px 0 0 0;
@@ -174,8 +194,12 @@ a:focus {
   background-position: 50% 100%;
 }
 
+#hero-banner .hero__article-block {
+  margin-top: 80px;
+}
+
 #hero-banner .hero__article-block .article__block--title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.3;
@@ -194,11 +218,70 @@ a:focus {
 }
 
 #hero-banner .hero__article-block .article__block--contact {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 2;
   text-transform: capitalize;
   color: var(--primary-color-red);
+  font-family: var(--font-poppins);
+}
+
+#hero-banner .hero__article-short-course-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5rem 0 0 0;
+}
+
+#hero-banner .hero__article-short-course-list .course__list--item {
+  padding: 1rem 0;
+}
+
+#hero-banner .hero__article-short-course-list .course__list--item:not(:last-child) {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+#hero-banner .hero__article-short-course-list .course__list--item .course__duration--title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: capitalize;
+  color: var(--primary-color-red);
+  font-family: var(--font-poppins);
+}
+
+#hero-banner .hero__article-short-course-list .course__list--item .course__title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: capitalize;
+  font-family: var(--font-poppins);
+}
+
+#hero-banner .hero__article-short-course-list .course__list--item .course__title a {
+  color: var(--text-color);
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#hero-banner .hero__article-short-course-list .course__list--item .course__title a:hover {
+  color: var(--primary-color-red);
+}
+
+#hero-banner .hero__article-short-course-list .course__list--item .course__description {
+  font-size: var(--font-size);
+  font-weight: 500;
+  line-height: 2;
+  text-transform: capitalize;
+  color: var(--anchor-color);
   font-family: var(--font-poppins);
 }
 /*# sourceMappingURL=style.css.map */
