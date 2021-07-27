@@ -9,6 +9,7 @@
 1.Theme default
 2.Navbar  
 3.Hero section
+4.course search section 
 */
 /* 1. Theme default css */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
@@ -73,7 +74,6 @@ a:focus {
 
 *:focus {
   outline: 0 !important;
-  border: 1px dashed var(--primary-color-light-red);
 }
 
 *:focus:not(.focus-visible) {
@@ -87,10 +87,13 @@ a:focus {
   font-weight: 700;
   padding: 14px 30px;
   border-radius: 0px;
+  border: 0;
   position: relative;
   z-index: 3;
   overflow: hidden;
   width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 /*===========
@@ -143,7 +146,7 @@ a:focus {
   color: var(--anchor-color);
 }
 
-.navbar .navbar-menu .navbar-social__list li a:hover {
+.navbar .navbar-menu .navbar-social__list li a:hover, .navbar .navbar-menu .navbar-social__list li a:focus {
   color: var(--primary-color-red);
 }
 
@@ -173,7 +176,7 @@ a:focus {
   text-decoration: none;
 }
 
-.navbar .navbar-menu a:hover {
+.navbar .navbar-menu a:hover, .navbar .navbar-menu a:focus {
   color: var(--primary-color-red);
 }
 
@@ -237,7 +240,7 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 5rem 0 0 0;
+  margin: 10rem 0 0 0;
 }
 
 #hero-banner .hero__article-short-course-list .course__list--item {
@@ -272,7 +275,7 @@ a:focus {
   transition: .5s;
 }
 
-#hero-banner .hero__article-short-course-list .course__list--item .course__title a:hover {
+#hero-banner .hero__article-short-course-list .course__list--item .course__title a:hover, #hero-banner .hero__article-short-course-list .course__list--item .course__title a:focus {
   color: var(--primary-color-red);
 }
 
@@ -283,5 +286,70 @@ a:focus {
   text-transform: capitalize;
   color: var(--anchor-color);
   font-family: var(--font-poppins);
+}
+
+#hero-banner .course--btn {
+  background: var(--primary-color-red);
+  background: -webkit-gradient(linear, left top, right top, from(#af1515), to(#da1818));
+  background: linear-gradient(90deg, #af1515 0%, #da1818 100%);
+  -webkit-box-shadow: 12px 12px 24px rgba(255, 255, 255, 0.64);
+          box-shadow: 12px 12px 24px rgba(255, 255, 255, 0.64);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  position: relative;
+}
+
+#hero-banner button::after {
+  content: '';
+  border-radius: 100%;
+  border: 6px solid #ff0303;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: ring 1.5s infinite;
+          animation: ring 1.5s infinite;
+}
+
+#hero-banner button:hover::after, #hero-banner button:focus::after {
+  -webkit-animation: none;
+          animation: none;
+  display: none;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+/*===========
+4.course search section 
+==============*/
+#find-your-course-by-search {
+  background: var(--primary-color-red);
+  padding: 50px 30px;
 }
 /*# sourceMappingURL=style.css.map */

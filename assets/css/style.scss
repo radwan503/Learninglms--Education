@@ -10,6 +10,7 @@
 1.Theme default
 2.Navbar  
 3.Hero section
+4.course search section 
 */
 
 
@@ -79,7 +80,6 @@ a:focus{
 
 *:focus { 
 	outline: 0 !important;
-	border: 1px dashed var(--primary-color-light-red);
 }
  
 *:focus:not(.focus-visible) {
@@ -92,10 +92,12 @@ a:focus{
 	font-weight: 700;
 	padding: 14px 30px;
 	border-radius: 0px;
+	border: 0;
 	position: relative;
 	z-index: 3;
 	overflow: hidden;
 	width: 100%;
+	transition: .5s;
 }
 
 /*===========
@@ -130,7 +132,8 @@ a:focus{
 
 				a{
 					color: var(--anchor-color);
-					&:hover{
+					&:hover,
+					&:focus{
 						color: var(--primary-color-red);
 					}
 				}
@@ -162,7 +165,8 @@ a:focus{
 			font-family: var(--font-nunito);
 			font-size: var(--font-size);
 			text-decoration: none;
-			&:hover{
+			&:hover,
+			&:focus{
 				color: var(--primary-color-red);
 			}
 		}
@@ -220,7 +224,7 @@ a:focus{
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		margin: 5rem 0 0 0;
+		margin: 10rem 0 0 0;
 		.course__list--item{
 			padding: 1rem 0;
 			&:not(:last-child) {
@@ -247,7 +251,8 @@ a:focus{
 					text-decoration: none;
 					transition: .5s;
 
-					&:hover{
+					&:hover,
+					&:focus{
 						color: var(--primary-color-red);
 					}
 				}
@@ -263,4 +268,52 @@ a:focus{
 			}
 		}
 	}
+			
+	.course--btn {
+		background: var(--primary-color-red);
+	   background: linear-gradient(90deg, rgb(175, 21, 21) 0%, rgb(218, 24, 24) 100%);
+		box-shadow: 12px 12px 24px rgba(255, 255, 255, 0.64);
+		transition: all 0.3s ease-in-out 0s;
+		position: relative;
+	}
+	 
+	button::after {
+		content: '';
+		border-radius: 100%;
+		border: 6px solid #ff0303;
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation: ring 1.5s infinite;
+	}
+	 
+	button:hover::after, button:focus::after {
+		animation: none;
+		display: none;
+	 }
+	 
+	 @keyframes ring {
+		0% {
+		  width: 30px;
+		  height: 30px;
+		  opacity: 1;
+		}
+		100% {
+		  width: 300px;
+		  height: 300px;
+		  opacity: 0;
+		}
+	 }
+
+}
+
+
+/*===========
+4.course search section 
+==============*/
+#find-your-course-by-search{
+   background: var(--primary-color-red);
+	padding: 50px 30px;
 }
