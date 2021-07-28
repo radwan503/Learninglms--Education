@@ -100,7 +100,11 @@ a:focus{
 	width: 100%;
 	transition: .5s;
 }
-
+.form-select,.form-control{
+	padding: 10px 30px;
+	border: 0;
+	border-radius: 0px;
+}
 /*===========
 2.Navbar 
 ==============*/
@@ -349,28 +353,53 @@ a:focus{
 					}
 				}
 			}
-		}
-
-		.courses-description{
-			i{
-				font-size: 1.5rem;
-				line-height: 1.3;
+			.courses-description{
+				i{
+					font-size: 1.5rem;
+					line-height: 1.3;
+				}
+				h5{
+					font-size: var(--body-font);
+					color: #000;
+					font-weight: 600;
+				}
+				p{
+					color: var(--anchor-color);
+					font-weight: 600;
+				}
 			}
-			h5{
-				font-size: var(--body-font);
-				color: #000;
-				font-weight: 600;
-		   }
-			p{
-				color: var(--anchor-color);
-				font-weight: 600;
-			}
 		}
-
 		.search-bgcolor {
 			background-color: #fe4646;
-	  }
-	}
-   
+			.course--searching{
+				.course--details{
+					h3{
+						font-size: 2rem;
+						line-height: 2.5rem;
+						font-weight: 700;
+						color: #fff;
+						font-family: var(--font-poppins);
+					}
+					label{
+						font-weight: 700;
+						text-transform: capitalize;
+						font-size: var(--body-font);
+						color:#fff;
+						font-family: var(--font-nunito);
+					}
 
+					.find__course--btn{
+						background-color: var(--primary-color-red);
+						border: 2px solid #ddd;
+						transition: .5s;
+						&:hover,&:focus{
+							background-color: #000;
+							border: 2px solid #000;
+						}
+					}
+				}
+			}
+	  }
+
+	}
 }
