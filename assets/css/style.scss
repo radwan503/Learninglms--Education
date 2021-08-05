@@ -554,10 +554,29 @@ a:focus{
 	position: relative;
 	height: 100%;
 	color: #000;
+	.testmonial-wrapper{
+		.testmonial--header{
+			h3{
+				font-size: 2rem;
+				line-height: 2.5rem;
+				font-family: var(--font-poppins);
+				font-weight: 700;
+				text-transform: capitalize;
+				color: #000;
+			}
+			p{
+				font-weight: 500;
+				text-transform: initial;
+				font-size: var(--body-font);
+				color:var(--anchor-color);
+				font-family: var(--font-nunito);
+			}
+		}
+	
 	.swiper-container {
 	  width: 100%;
 	  height: 100%;
-	}
+	
  
 	.swiper-button {
 	  &-next,
@@ -605,6 +624,17 @@ a:focus{
 		  width: 60%;
 		  background-color: var(--primary-color-red);
 		  height: 200px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  padding:0 20px;
+		  p{
+			font-size: 1rem;
+			font-family: var(--font-poppins);
+			font-weight: 700;
+			text-transform: capitalize;
+			color: #fff;
+		  }
 	  }
 	  
 	}
@@ -652,4 +682,17 @@ a:focus{
 		 }
 	  }
 	}
+}
+}
+
+.counter-wrapper{
+	.counter-item{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		text-align: left;
+
+	}
+
+}
  }
