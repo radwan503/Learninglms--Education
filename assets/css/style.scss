@@ -10,7 +10,8 @@
 1.Theme default
 2.Navbar  
 3.Hero section
-4.course search section 
+4.course search section
+5.course section  
 */
 
 
@@ -275,8 +276,9 @@ a:focus{
 	}
 			
 	.course--btn {
+		background-color: rgb(254, 72, 72);
 		background: var(--primary-color-red);
-	   background: linear-gradient(90deg, rgb(175, 21, 21) 0%, rgb(218, 24, 24) 100%);
+	   background: linear-gradient(90deg, rgb(254, 72, 72) 0%, rgb(254, 72, 72) 100%);
 		box-shadow: 12px 12px 24px rgba(255, 255, 255, 0.64);
 		transition: all 0.3s ease-in-out 0s;
 		position: relative;
@@ -403,3 +405,251 @@ a:focus{
 
 	}
 }
+
+/*===========
+5.course section 
+==============*/
+
+#courses-wrapper{
+	.courses__list{
+		.course--header{
+			h3{
+				font-size: 2rem;
+				line-height: 2.5rem;
+				font-family: var(--font-poppins);
+				font-weight: 700;
+				text-transform: capitalize;
+				color: #000;
+			}
+			p{
+				font-weight: 500;
+				text-transform: initial;
+				font-size: var(--body-font);
+				color:var(--anchor-color);
+				font-family: var(--font-nunito);
+			}
+		}
+
+		.courses{
+			display: grid;
+			grid-template-columns: repeat(6,1fr);
+			.individual-courses{
+				height: 200px;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				h1{
+					font-size: 2rem;
+					line-height: 2.5rem;
+					font-family: var(--font-poppins);
+					font-weight: 700;
+					text-transform: capitalize;
+					color: var(--primary-color-red);
+					&:hover{
+						color: #000;
+					}
+				}
+				&:nth-child(1){
+					background-color: #FCB03Bff;
+				}
+				&:nth-child(2){
+					background-color: #f8f9fa;
+				}
+				&:nth-child(3){
+					background-color: #138D75;
+				}
+				&:nth-child(4){
+					background-color: #f8f9fa;
+				}
+				&:nth-child(5){
+					background-color: #28B463;
+				}
+				&:nth-child(6){
+					background-color: #f8f9fa;
+				}
+				&:nth-child(7){
+					background-color: #f8f9fa;
+				}
+				&:nth-child(8){
+					background-color: #F15B26;
+				}
+				&:nth-child(9){
+					background-color: #f8f9fa;
+				}
+				&:nth-child(10){
+					background-color: #fe4646;
+				}
+				&:nth-child(11){
+					background-color: #f8f9fa;	
+				}
+				&:nth-child(12){
+					background-color: #2874A6;
+				}
+				&:nth-child(13){
+					background-color: #6C3483;
+				}
+				&:nth-child(14){
+					background-color: #f8f9fa;
+				}
+				&:nth-child(15){
+					background-color: #F7DC6F;
+				}
+				&:nth-child(16){
+					background-color: #f8f9fa;
+				}
+				&:nth-child(17){
+					background-color: #C39BD3;
+				}
+				&:nth-child(18){
+					background-color: #f8f9fa;	
+				}
+				img{
+					height: 50%;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+}
+
+
+#banner-section{
+	.banner-bg{
+		background-image: linear-gradient(0deg, rgba(255, 234, 234, 0.863), rgba(255, 255, 255, 0.1)),url("https://source.unsplash.com/1600x900/?library");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 20rem;
+		width: 100%;
+		.banner-title{
+			background-color: rgba(254, 72, 72,.8);
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			height: 100%;
+			width: 40%;
+			h1{
+				font-size: 2rem;
+				line-height: 2.5rem;
+				font-family: var(--font-poppins);
+				font-weight: 700;
+				text-transform: capitalize;
+				color: #000;
+			}
+			p{
+				font-size: var(--body-font);
+				color: #fff;
+			}
+		}
+
+	}
+}
+
+
+
+#testmonial-section {
+	position: relative;
+	height: 100%;
+	color: #000;
+	.swiper-container {
+	  width: 100%;
+	  height: 100%;
+	}
+ 
+	.swiper-button {
+	  &-next,
+	  &-prev {
+		 color: #000;
+		 font-size: 10px;
+		 height: 10px;
+	  }
+	}
+	.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+		font-family: "Font Awesome 5 Free";
+		content: "\f30b";
+		display: inline-block;
+		padding-right: 3px;
+		vertical-align: middle;
+		font-weight: 900;
+
+   }
+	.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+		font-family: "Font Awesome 5 Free";
+		content: "\f30a";
+		display: inline-block;
+		padding-right: 3px;
+		vertical-align: middle;
+		font-weight: 900;
+
+   }
+
+	.swiper-slide-duplicate,
+	.swiper-slide {
+	  background-position: center center;
+	  background-size: cover;
+	  text-align: center;
+	  font-size: 18px;
+	  background: #fff;
+ 
+	  /* Center slide text vertically */
+	  display: flex;
+	  flex-flow: column nowrap;
+	  justify-content: center;
+	  //align-items: center;
+
+	  .slider-content{
+		  position: absolute;
+		  width: 60%;
+		  background-color: var(--primary-color-red);
+		  height: 200px;
+	  }
+	  
+	}
+ 
+	.swiper-progress-bar {
+	  position: relative;
+	  width: 80%;
+	  display: block;
+	  z-index: 1;
+	  height: 2px;
+	  margin: 0 auto;
+	  .slide_progress-bar {
+		 position: absolute;
+		 height: 3px;
+		 background: var(--primary-color-red);
+		 width: auto;
+		 clear: both;
+		 opacity: 0;
+		 bottom: 45px;
+		 left: 0;
+		 right: 0;
+		 &:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: var(--primary-color-light-red);
+			height: 100%;
+			width: 0;
+			content: '';
+		 }
+	  }
+	  &.active {
+		 .slide_progress-bar {
+			opacity: 1;
+		 }
+	  }
+	  &.animate {
+		 .slide_progress-bar {
+			&:after {
+			  transition: width linear;
+			  transition-delay: unset;
+			  width: 100%;
+			  transition-duration: 5s;
+			}
+		 }
+	  }
+	}
+ }

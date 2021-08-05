@@ -9,7 +9,8 @@
 1.Theme default
 2.Navbar  
 3.Hero section
-4.course search section 
+4.course search section
+5.course section  
 */
 /* 1. Theme default css */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
@@ -296,9 +297,10 @@ a:focus {
 }
 
 #hero-banner .course--btn {
+  background-color: #fe4848;
   background: var(--primary-color-red);
-  background: -webkit-gradient(linear, left top, right top, from(#af1515), to(#da1818));
-  background: linear-gradient(90deg, #af1515 0%, #da1818 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#fe4848), to(#fe4848));
+  background: linear-gradient(90deg, #fe4848 0%, #fe4848 100%);
   -webkit-box-shadow: 12px 12px 24px rgba(255, 255, 255, 0.64);
           box-shadow: 12px 12px 24px rgba(255, 255, 255, 0.64);
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -437,5 +439,285 @@ a:focus {
 #find-your-course-by-search .lms-courses-wrapper .search-bgcolor .course--searching .course--details .find__course--btn:hover, #find-your-course-by-search .lms-courses-wrapper .search-bgcolor .course--searching .course--details .find__course--btn:focus {
   background-color: #000;
   border: 2px solid #000;
+}
+
+/*===========
+5.course section 
+==============*/
+#courses-wrapper .courses__list .course--header h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000;
+}
+
+#courses-wrapper .courses__list .course--header p {
+  font-weight: 500;
+  text-transform: initial;
+  font-size: var(--body-font);
+  color: var(--anchor-color);
+  font-family: var(--font-nunito);
+}
+
+#courses-wrapper .courses__list .courses {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+#courses-wrapper .courses__list .courses .individual-courses {
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--primary-color-red);
+}
+
+#courses-wrapper .courses__list .courses .individual-courses h1:hover {
+  color: #000;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(1) {
+  background-color: #FCB03Bff;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(2) {
+  background-color: #f8f9fa;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(3) {
+  background-color: #138D75;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(4) {
+  background-color: #f8f9fa;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(5) {
+  background-color: #28B463;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(6) {
+  background-color: #f8f9fa;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(7) {
+  background-color: #f8f9fa;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(8) {
+  background-color: #F15B26;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(9) {
+  background-color: #f8f9fa;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(10) {
+  background-color: #fe4646;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(11) {
+  background-color: #f8f9fa;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(12) {
+  background-color: #2874A6;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(13) {
+  background-color: #6C3483;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(14) {
+  background-color: #f8f9fa;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(15) {
+  background-color: #F7DC6F;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(16) {
+  background-color: #f8f9fa;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(17) {
+  background-color: #C39BD3;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses:nth-child(18) {
+  background-color: #f8f9fa;
+}
+
+#courses-wrapper .courses__list .courses .individual-courses img {
+  height: 50%;
+  margin: 0 auto;
+}
+
+#banner-section .banner-bg {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 234, 234, 0.863)), to(rgba(255, 255, 255, 0.1))), url("https://source.unsplash.com/1600x900/?library");
+  background-image: linear-gradient(0deg, rgba(255, 234, 234, 0.863), rgba(255, 255, 255, 0.1)), url("https://source.unsplash.com/1600x900/?library");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 100%;
+}
+
+#banner-section .banner-bg .banner-title {
+  background-color: rgba(254, 72, 72, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 40%;
+}
+
+#banner-section .banner-bg .banner-title h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000;
+}
+
+#banner-section .banner-bg .banner-title p {
+  font-size: var(--body-font);
+  color: #fff;
+}
+
+#testmonial-section {
+  position: relative;
+  height: 100%;
+  color: #000;
+}
+
+#testmonial-section .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+#testmonial-section .swiper-button-next, #testmonial-section .swiper-button-prev {
+  color: #000;
+  font-size: 10px;
+  height: 10px;
+}
+
+#testmonial-section .swiper-button-next:after, #testmonial-section .swiper-container-rtl .swiper-button-prev:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f30b";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+#testmonial-section .swiper-button-prev:after, #testmonial-section .swiper-container-rtl .swiper-button-next:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f30a";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+#testmonial-section .swiper-slide-duplicate,
+#testmonial-section .swiper-slide {
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#testmonial-section .swiper-slide-duplicate .slider-content,
+#testmonial-section .swiper-slide .slider-content {
+  position: absolute;
+  width: 60%;
+  background-color: var(--primary-color-red);
+  height: 200px;
+}
+
+#testmonial-section .swiper-progress-bar {
+  position: relative;
+  width: 80%;
+  display: block;
+  z-index: 1;
+  height: 2px;
+  margin: 0 auto;
+}
+
+#testmonial-section .swiper-progress-bar .slide_progress-bar {
+  position: absolute;
+  height: 3px;
+  background: var(--primary-color-red);
+  width: auto;
+  clear: both;
+  opacity: 0;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+}
+
+#testmonial-section .swiper-progress-bar .slide_progress-bar:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primary-color-light-red);
+  height: 100%;
+  width: 0;
+  content: '';
+}
+
+#testmonial-section .swiper-progress-bar.active .slide_progress-bar {
+  opacity: 1;
+}
+
+#testmonial-section .swiper-progress-bar.animate .slide_progress-bar:after {
+  -webkit-transition: width linear;
+  transition: width linear;
+  -webkit-transition-delay: unset;
+          transition-delay: unset;
+  width: 100%;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
 }
 /*# sourceMappingURL=style.css.map */

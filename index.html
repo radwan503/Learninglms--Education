@@ -1,4 +1,4 @@
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -25,6 +25,8 @@
 
   <link rel="stylesheet" href="./assets/css/all.css">
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -36,65 +38,64 @@
         <div class="container-fluid">
           <a class="navbar-brand logo" href="#"><img src="./assets/img/logo/logo.svg" alt="lms-logo"></a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#lms-navbar" aria-controls="lms-navbar" aria-expanded="false"
-            aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lms-navbar"
+            aria-controls="lms-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="lms-navbar">
             <div class="navbar-menu">
 
-            <div class="navbar-social__list ">
-              <div class="menu__list--item">
-              <li><a href="" class=""><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="" class=""><i class="fab fa-twitter"></i></a></li>
-              <li><a href="" class=""><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="" class=""><i class="fab fa-instagram"></i></a></li>
-            </div>
-            <div class="menu__list--item">
-              <li><a href="" class=""><i class="fas fa-phone-alt"></i><span> +123 321 7890</span></a></li>
-              <li><a href="" class=""><i class="far fa-clock"></i><span> Coventry CV4 7AL, USA</span></a></li>
-              <li><a href="" class=""></a></li>
-            </div>
-            </div>
+              <div class="navbar-social__list ">
+                <div class="menu__list--item">
+                  <li><a href="" class=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="" class=""><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="" class=""><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="" class=""><i class="fab fa-instagram"></i></a></li>
+                </div>
+                <div class="menu__list--item">
+                  <li><a href="" class=""><i class="fas fa-phone-alt"></i><span> +123 321 7890</span></a></li>
+                  <li><a href="" class=""><i class="far fa-clock"></i><span> Coventry CV4 7AL, USA</span></a></li>
+                  <li><a href="" class=""></a></li>
+                </div>
+              </div>
 
-            <ul class="navbar-nav navbar-menu--list me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Language Program</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Admission</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Who we are</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  pages
-                </a>
-                <ul class="dropdown-menu custom-dropdown--menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Home</a></li>
-                  <li><a class="dropdown-item" href="#">Language program</a></li>
-                  <li><a class="dropdown-item" href="#">Admission</a></li>
-                  <li><a class="dropdown-item" href="#">who we are</a></li>
-                  <li><a class="dropdown-item" href="#">events</a></li>
-                    
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
-              </li>
-            </ul>
+              <ul class="navbar-nav navbar-menu--list me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Language Program</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Admission</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Who we are</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    pages
+                  </a>
+                  <ul class="dropdown-menu custom-dropdown--menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Language program</a></li>
+                    <li><a class="dropdown-item" href="#">Admission</a></li>
+                    <li><a class="dropdown-item" href="#">who we are</a></li>
+                    <li><a class="dropdown-item" href="#">events</a></li>
+
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">contact</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -108,7 +109,8 @@
           <div class="col-lg-3 col-sm-12 col-xs-12">
             <article class="hero__article-block">
               <h1 class="article__block--title">Grow business language.</h1>
-              <p class="article__block--subtitle">Drive business outcomes and hold a competitive edge on the market by improving your organization’s English proficienc</p>
+              <p class="article__block--subtitle">Drive business outcomes and hold a competitive edge on the market by
+                improving your organization’s English proficienc</p>
               <p class="article__block--contact"> +123 321 7890</p>
             </article>
           </div>
@@ -123,12 +125,14 @@
               <div class="course__list--item">
                 <p class="course__duration--title">2 MONTHS/NIGHT SHIFT</p>
                 <h4 class="course__title"><a href="#" class="">Word Relay</a></h4>
-                <p class="course__description">Lorem ipsum dolor sit amet, consetetur adipiscing elitsed do eius mod.</p>
+                <p class="course__description">Lorem ipsum dolor sit amet, consetetur adipiscing elitsed do eius mod.
+                </p>
               </div>
               <div class="course__list--item">
                 <p class="course__duration--title">2 MONTHS/NIGHT SHIFT</p>
                 <h4 class="course__title"><a href="#" class="">Word Relay</a></h4>
-                <p class="course__description">Lorem ipsum dolor sit amet, consetetur adipiscing elitsed do eius mod.</p>
+                <p class="course__description">Lorem ipsum dolor sit amet, consetetur adipiscing elitsed do eius mod.
+                </p>
               </div>
             </article>
 
@@ -139,96 +143,269 @@
     </section>
 
     <section id="find-your-course-by-search" class="courses-by-search pb-5">
-       <div class="container">
-          <div class="lms-courses-wrapper">
-            <div class="row g-0">
-              <div class="col-xs-12  col-sm-12 col-md-7 col-lg-7 bg-light ">
-                <div class="course-info p-5">
-                  <article class="course--details">
-                      <h3 class="mb-4">Welcome to<br>
-                      <span>Learning School</span></h3>
-                      <p class="mb-4">Language School specializes in English Language education. With more than 30 years of experience teaching English as a Second Language, LS has gained a reputation for providing high-quality education in a friendly and supportive environment at an affordable price.</p>
-                      <a href="#" class="mb-4">Browse All Course</a>
-                  </article>
+      <div class="container">
+        <div class="lms-courses-wrapper">
+          <div class="row g-0">
+            <div class="col-xs-12  col-sm-12 col-md-7 col-lg-7 bg-light ">
+              <div class="course-info p-5">
+                <article class="course--details">
+                  <h3 class="mb-4">Welcome to<br>
+                    <span>Learning School</span>
+                  </h3>
+                  <p class="mb-4">Language School specializes in English Language education. With more than 30 years of
+                    experience teaching English as a Second Language, LS has gained a reputation for providing
+                    high-quality education in a friendly and supportive environment at an affordable price.</p>
+                  <a href="#" class="mb-4">Browse All Course</a>
+                </article>
 
-                  <div class="courses-description mt-4">
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                          <div class="course-schedule mb-4">
-                            <div class="course--location">
-                              <div class="media d-flex flex-row">
-                                <div class="me-3">
-                                  <i class="fas fa-clock"></i>
-                                </div>
-                                <div class="media-body">
-                                  <h5 class="mt-0">10.30 AM - 07:30 PM</h5>
-                                  <p>Monday - Friday</p>
-                                </div>
-                              </div>
-  
+                <div class="courses-description mt-4">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                      <div class="course-schedule mb-4">
+                        <div class="course--location">
+                          <div class="media d-flex flex-row">
+                            <div class="me-3">
+                              <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="media-body">
+                              <h5 class="mt-0">10.30 AM - 07:30 PM</h5>
+                              <p>Monday - Friday</p>
                             </div>
                           </div>
+
+                        </div>
                       </div>
-                      <div class="col-xs-12  col-sm-12 col-md-7 col-lg-7">
-                          <div class="course-location">
-                            <div class="media d-flex flex-row">
-                              <div class="me-3">
-                                <i class="fas fa-globe-americas"></i>
-                              </div>
-                              <div class="media-body">
-                                <h5 class="mt-0">6TH FLOOR, CANADA CV6 8FL, USA</h5>
-                                <p>Office Address</p>
-                              </div>
-                            </div>
-
+                    </div>
+                    <div class="col-xs-12  col-sm-12 col-md-7 col-lg-7">
+                      <div class="course-location">
+                        <div class="media d-flex flex-row">
+                          <div class="me-3">
+                            <i class="fas fa-globe-americas"></i>
                           </div>
+                          <div class="media-body">
+                            <h5 class="mt-0">6TH FLOOR, CANADA CV6 8FL, USA</h5>
+                            <p>Office Address</p>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
-
                 </div>
+
               </div>
-              <div class="col-xs-12  col-sm-12 col-md-5 col-lg-5 search-bgcolor">
-                <div class="course--searching p-5">
-                  <div class="course--details">
-                    <h3 class="mb-3">Find your course</h3>
-                    <form class="row g-4">
-                      <div class="col-md-6">
-                        <label for="course--level" class="form-label">Course Level</label>
-                        <select id="course--level" class="form-select">
-                          <option selected>Choose...</option>
-                          <option>All</option>
-                          <option>Beginner</option>
-                        </select>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="category--input" class="form-label">Course Category</label>
-                        <select id="category--input" class="form-select">
-                          <option selected>Choose...</option>
-                          <option>All</option>
-                          <option>English</option>
-                        </select>
-                      </div>
-                      
-                      <div class="col-12 ">
-                        <label for="course--search" class="form-label">Search</label>
-                        <input type="text" class="form-control" id="course--search" placeholder="What are looking for">
-                      </div>
-                      
-                      
-                      
-                      <div class="col-12">
-                        <button type="submit" class="btn btn-primary find__course--btn">Search Course</button>
-                      </div>
-                    </form>
-                  </div>
+            </div>
+            <div class="col-xs-12  col-sm-12 col-md-5 col-lg-5 search-bgcolor">
+              <div class="course--searching p-5">
+                <div class="course--details">
+                  <h3 class="mb-3">Find your course</h3>
+                  <form class="row g-4">
+                    <div class="col-md-6">
+                      <label for="course--level" class="form-label">Course Level</label>
+                      <select id="course--level" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>All</option>
+                        <option>Beginner</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="category--input" class="form-label">Course Category</label>
+                      <select id="category--input" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>All</option>
+                        <option>English</option>
+                      </select>
+                    </div>
 
+                    <div class="col-12 ">
+                      <label for="course--search" class="form-label">Search</label>
+                      <input type="text" class="form-control" id="course--search" placeholder="What are looking for">
+                    </div>
+
+
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary find__course--btn">Search Course</button>
+                    </div>
+                  </form>
                 </div>
+
               </div>
             </div>
           </div>
-       </div>
+        </div>
+      </div>
     </section>
+
+    <section id="courses-wrapper" class="our-courses pb-5 my-5">
+      <div class="container">
+        <div class="courses__list">
+          <div class="course--header mb-5">
+            <h3 class="mb-2">Our Courses</h3>
+            <p>There are various kinds of courses available: from online courses to summer courses and intensive
+              courses.</p>
+          </div>
+
+          <div class="courses">
+            <div class="individual-courses 1">
+              <img src="./assets/img/courses/courses1.png" alt="">
+            </div>
+
+            <div class="individual-courses 2">
+              <a href="#">
+                <h1>React</h1>
+              </a>
+            </div>
+
+            <div class="individual-courses 3">
+              <img src="./assets/img/courses/courses1.png" alt="">
+            </div>
+
+            <div class="individual-courses 4">
+              <a href="#">
+                <h1>Java</h1>
+              </a>
+            </div>
+
+            <div class="individual-courses 5">
+              <img src="./assets/img/courses/courses1.png" alt="">
+            </div>
+
+            <div class="individual-courses 6">
+              <a href="#">
+                <h1>Python</h1>
+              </a>
+            </div>
+
+            <!-- 2nd row -->
+            <div class="individual-courses 7">
+              <a href="#">
+                <h1>C++</h1>
+              </a>
+            </div>
+
+            <div class="individual-courses 8">
+              <img src="./assets/img/courses/courses1.png" alt="">
+            </div>
+
+            <div class="individual-courses 9">
+              <a href="#">
+                <h1>Ruby</h1>
+              </a>
+            </div>
+
+            <div class="individual-courses 10">
+              <img src="./assets/img/courses/courses1.png" alt="">
+            </div>
+
+            <div class="individual-courses 11">
+              <a href="#">
+                <h1>Javascript</h1>
+              </a>
+            </div>
+
+            <div class="individual-courses 12">
+              <img src="./assets/img/courses/courses1.png" alt="">
+            </div>
+
+            <!-- third row -->
+
+            <div class="individual-courses 13">
+              <img src="./assets/img/courses/courses1.png" alt="">
+            </div>
+
+
+            <div class="individual-courses 14">
+              <a href="#">
+                <h1>Physics</h1>
+              </a>
+            </div>
+
+
+            <div class="individual-courses 15">
+              <img src="./assets/img/courses/courses1.png" alt="">
+            </div>
+
+
+            <div class="individual-courses 16">
+              <a href="#">
+                <h1>Chemistry</h1>
+              </a>
+            </div>
+
+
+            <div class="individual-courses 17">
+              <img src="./assets/img/courses/courses1.png" alt="">
+            </div>
+
+
+            <div class="individual-courses 18">
+              <a href="#">
+                <h1>Math</h1>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="banner-section" class="brocheure-banner pb-5">
+      <div class="container">
+        <div class="banner-bg">
+          <div class="banner-title px-4 py-5">
+            <h1 class="mb-3">Download App</h1>
+            <p>Go to playstore.Savings of up to 50% Off Tuition! Valid only at Language School USA. Contact
+              info@languageschool.com to learn more!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="testmonial-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./assets/img/testmonial/testimonnial_item1.jpg">
+                   <div class="slider-content">
+                      <blockquote>
+                        “Life is what happens when you’re busy making other plans.” — John Lennon
+                      </blockquote>
+                   </div>
+                </div>
+
+                <!-- <div class="swiper-slide">
+                  
+                  Slide 2
+                
+                </div>
+                <div class="swiper-slide">Slide 3</div> -->
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- Progressbar -->
+              <div class="swiper-progress-bar">
+                <span class="slide_progress-bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
 
 
   </div>
@@ -237,7 +414,11 @@
 
   <script src="./assets/js/vendor/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
-  <script src="./assets/js/plugin.js" type="module"></script>
+  <script src="./assets/js/vendor/swiper-bundle.js"></script>
+  <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
+  <script src="./assets/js/vendor/plugin.js"></script>
+  <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>
