@@ -9,7 +9,6 @@ for(i= 0; i<couresBox.length;i++){
    couresBox[i].style.backgroundColor  = coursesColor[Math.floor(Math.random() * coursesColor.length)];
 }*/
 
-
 // counter testmonial
 
 $('.counter-num').each(function () {

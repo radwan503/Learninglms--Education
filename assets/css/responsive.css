@@ -1,3 +1,45 @@
+/* small mobile :320px. */
+@media (max-width: 767px) {
+   #hero-banner{
+      background-image: none;
+   }
+   #hero-banner .hero__article-block .article__block--title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.3;
+      margin-bottom: 10px;
+      font-family: var(--font-poppins);
+   }
+  .courses {
+      display: -ms-grid;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) !important;
+  }
+  #hero-banner .hero__article-short-course-list{
+   margin: 1rem 0 0 0;
+  }
+  .swiper-slide .slider-content p {
+   font-size: .8rem !important;
+   font-family: var(--font-poppins);
+   font-weight: 700;
+   text-transform: capitalize;
+   color: #fff;
+  }
+  #short-info-counter {
+     display: none !important;
+  }
+  #banner-section .banner-bg .banner-title{
+     width: 100%;
+  }
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+/* .container {width:450px} */
+ 
+}
+
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
 
@@ -16,17 +58,4 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
 
-}
-
- 
-/* small mobile :320px. */
-@media (max-width: 767px) {
-
- 
-}
- 
-/* Large Mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
- 
 }

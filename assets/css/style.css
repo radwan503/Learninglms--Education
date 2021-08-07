@@ -70,13 +70,6 @@ h6, p, a {
   padding: 0;
 }
 
-a,
-a:hover,
-a:focus {
-  color: var(--anchor-color);
-  text-decoration: none;
-}
-
 *:focus {
   outline: 0 !important;
 }
@@ -85,6 +78,13 @@ a:focus {
   outline: 0 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+a,
+a:hover,
+a:focus {
+  color: var(--anchor-color);
+  text-decoration: none;
 }
 
 .btn {
@@ -580,8 +580,8 @@ a:focus {
 6.banner section 
 ==============*/
 #banner-section .banner-bg {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 234, 234, 0.863)), to(rgba(255, 255, 255, 0.1))), url("https://source.unsplash.com/1600x900/?library");
-  background-image: linear-gradient(0deg, rgba(255, 234, 234, 0.863), rgba(255, 255, 255, 0.1)), url("https://source.unsplash.com/1600x900/?library");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 234, 234, 0.863)), to(rgba(255, 255, 255, 0.1))), url(../img/banner/banner.jpg);
+  background-image: linear-gradient(0deg, rgba(255, 234, 234, 0.863), rgba(255, 255, 255, 0.1)), url(../img/banner/banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -919,8 +919,429 @@ a:focus {
   top: 7rem;
 }
 
+#events-section .events--header h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #313131;
+}
+
+#events-section .events--header p {
+  font-weight: 500;
+  text-transform: initial;
+  font-size: var(--body-font);
+  color: var(--anchor-color);
+  font-family: var(--font-nunito);
+}
+
+#events-section .events-date {
+  text-align: center;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: var(--primary-color-red);
+  color: #fff;
+  padding: 12px 20px 8px 20px;
+  text-transform: uppercase;
+}
+
+#events-section .event-block img {
+  height: 100%;
+  width: 100%;
+}
+
+#events-section .event-card h5 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+#events-section .event-card h5 a {
+  color: var(--primary-color-red);
+}
+
+#events-section .event-card p {
+  color: var(--anchor-color);
+}
+
+#events-section .event-card .event-time {
+  margin: 0;
+  padding: 0;
+}
+
+#events-section .event-card .event-time li {
+  display: inline-block;
+  margin-right: 20px;
+  color: var(--anchor-color);
+}
+
+#admission-course-details .admission--header h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #313131;
+}
+
+#admission-course-details .admission--header p {
+  font-weight: 500;
+  text-transform: initial;
+  font-size: var(--body-font);
+  color: var(--anchor-color);
+  font-family: var(--font-nunito);
+}
+
+#admission-course-details .about-text {
+  color: var(--anchor-color);
+}
+
+#admission-course-details .about-text h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+#admission-course-details .about-text h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#admission-course-details .about-text p {
+  font-size: 1rem;
+  max-width: 450px;
+}
+
+#admission-course-details .about-text p mark {
+  font-weight: 600;
+  color: var(--primary-color-red);
+}
+
+#admission-course-details .about-avatar img {
+  height: 100%;
+  width: 100%;
+}
+
+#admission-course-details .about-list {
+  padding-top: 10px;
+}
+
+#admission-course-details .about-list .media {
+  padding: 5px 0;
+}
+
+#admission-course-details .about-list label {
+  color: var(--primary-color-red);
+  font-weight: 600;
+  width: 88px;
+  margin: 0;
+  position: relative;
+}
+
+#admission-course-details .about-list label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 11px;
+  width: 1px;
+  height: 12px;
+  background: #20247b;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  margin: auto;
+  opacity: 0.5;
+}
+
+#admission-course-details .about-list p {
+  margin: 0;
+  font-size: 15px;
+}
+
+#admission-course-details .admission-student-counter {
+  padding: 30px 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+          box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+}
+
+#admission-course-details .admission-student-counter .count-data {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#admission-course-details .admission-student-counter .count {
+  font-weight: 700;
+  color: var(--primary-color-red);
+  margin: 0 0 5px;
+}
+
+#admission-course-details .admission-student-counter p {
+  font-weight: 600;
+  margin: 0;
+  color: var(--anchor-color);
+}
+
+#admission-course-details mark {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 83, 86, 0.6)), to(rgba(252, 83, 86, 0.6)));
+  background-image: linear-gradient(rgba(252, 83, 86, 0.6), rgba(252, 83, 86, 0.6));
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-color: transparent;
+  padding: 0;
+  color: currentColor;
+}
+
+#admission-course-details .theme-color {
+  color: var(--anchor-color);
+}
+
+#admission-course-details .dark-color {
+  color: var(--primary-color-red);
+}
+
+@media (max-width: 767px) {
+  #admission-course-details .about-text h3 {
+    font-size: 35px;
+  }
+  #admission-course-details .about-text h6 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  #admission-course-details .about-avatar {
+    margin-top: 30px;
+  }
+}
+
+#admission-section .admission--header h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #313131;
+}
+
+#admission-section .admission--header p {
+  font-weight: 500;
+  text-transform: initial;
+  font-size: var(--body-font);
+  color: var(--anchor-color);
+  font-family: var(--font-nunito);
+}
+
+#admission-section .apply-details h3 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #313131;
+}
+
+#admission-section .apply-details p {
+  color: var(--anchor-color);
+  font-size: 1rem;
+}
+
+#admission-section .apply-details ul {
+  margin: 0 0;
+  padding: 0;
+}
+
+#admission-section .apply-details ul li {
+  list-style: none;
+  color: var(--anchor-color);
+  font-size: 1rem;
+}
+
+#admission-section .related-course figcaption {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #313131;
+}
+
+#who-we-are-section .social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+#who-we-are-section .social-link:hover,
+#who-we-are-section .social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+#who-we-are-section h1 {
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--primary-color-red);
+}
+
+#who-we-are-section h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--primary-color-red);
+}
+
+#team-section h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--primary-color-red);
+}
+
+#contactus-section .contact-name {
+  margin-bottom: 30px;
+}
+
+#contactus-section .contact-name h5 {
+  font-size: 22px;
+  color: var(--primary-color-red);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+#contactus-section .contact-name p {
+  font-size: 18px;
+  margin: 0;
+  color: var(--anchor-color);
+}
+
+#contactus-section .contact-form .form-control {
+  border: none;
+  border-bottom: 1px solid #20247b;
+  background: transparent;
+  border-radius: 0;
+  padding-left: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#contactus-section .contact-form .form-control:focus {
+  border-bottom: 1px solid #fc5356;
+}
+
+#contactus-section .contact-form .form-control.invalid {
+  border-bottom: 1px solid #ff0000;
+}
+
+#contactus-section .contact-form .send {
+  margin-top: 20px;
+  margin-top: 20px;
+}
+
+#contactus-section .section-title {
+  padding-bottom: 45px;
+}
+
+#contactus-section .section-title h2 {
+  font-weight: 700;
+  color: var(--primary-color-red);
+  font-size: 45px;
+  margin: 0 0 15px;
+  border-left: 5px solid #fc5356;
+  padding-left: 15px;
+}
+
+#contactus-section .section-title p {
+  color: var(--anchor-color);
+}
+
+#contactus-section .lms-btn {
+  padding: 0 50px 0 20px;
+  line-height: 60px;
+  position: relative;
+  display: inline-block;
+  color: var(--primary-color-red);
+  background: none;
+  border: none;
+  font-weight: 700;
+}
+
+#contactus-section .lms-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid var(--primary-color-red);
+  border-right: 1px solid transparent;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+  width: 60px;
+  height: 60px;
+}
+
+#contactus-section .lms-btn .arrow {
+  width: 13px;
+  height: 2px;
+  background: currentColor;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 25px;
+}
+
+#contactus-section .lms-btn .arrow:after {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0;
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 767px) {
+  #contactus-section .contact-form .send {
+    margin-bottom: 20px;
+  }
+}
+
 #footer {
-  background: #404040;
+  background: rgba(25, 47, 89, 0.8);
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -928,7 +1349,7 @@ a:focus {
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #404040;
+  background: rgba(25, 47, 89, 0.4);
 }
 
 #footer .footer-newsletter h4 {
@@ -976,7 +1397,7 @@ a:focus {
 }
 
 #footer .footer-top {
-  background: #3b3b3b;
+  background: rgba(25, 47, 89, 0.4);
   border-top: 1px solid #474747;
   border-bottom: 1px solid #474747;
   padding: 60px 0 30px 0;
@@ -1006,7 +1427,7 @@ a:focus {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #545454;
+  background: var(--primary-color-red);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1020,7 +1441,7 @@ a:focus {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: var(--primary-color-red);
+  background: var(--primary-color-light-red);
   color: #fff;
   text-decoration: none;
 }
@@ -1046,7 +1467,7 @@ a:focus {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #313131;
+  color: #ddd;
   font-size: var(--font-size);
   line-height: 1;
 }
