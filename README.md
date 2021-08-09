@@ -2,7 +2,7 @@
 
 ## Introduction
 
-> Learning LMS - HTML template. Best for e-Learning, online courses, training centers, Online academy, Online Institute, Online School, College, University, and Online Instructor Websites.<br>
+> Learning LMS - HTML template. Best for e-Learning, online courses, training centers, Online academy, Online Institute, Online School, College, University, and Online Instructor Websites.Image and idea from internate.<br>
 
 1.Courses information <br>
 2.Program Setting<br>
