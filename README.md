@@ -9,6 +9,7 @@
 3.Admission Info<br>
 4.Events<br> 
 5.People Review<br>
+6.Searching<br>
 
 
 #Pages
